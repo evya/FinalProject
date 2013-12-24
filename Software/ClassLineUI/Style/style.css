@@ -1,0 +1,206 @@
+body {
+   background: #555;
+   color: #eee;
+   position: absolute;
+
+}
+
+#menu {
+	border: 1px solid #aaa;
+	background-color: #777;
+	width: auto;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+
+#footer {
+   position: fixed;
+   bottom:0;
+   alignment-adjust: middle;
+   text-align:center;
+   width:98%;
+   height:3%;   /* Height of the footer */
+   background-color:#777;
+}
+
+
+.css-form input.ng-invalid.ng-dirty {
+	background-color: #FA787E;
+}
+    
+.css-form input.ng-valid.ng-dirty {
+	background-color: #78FA89;
+}
+*
+{
+	/*margin: 0;
+	padding: 0;
+	/*border: 2px solid black;*/
+}
+article
+{
+	width: 100%;
+	height: 500px;
+	margin: auto;
+}
+.imgTumbnail
+{
+	/*height: 100px;*/
+	width: 120px;
+}
+#imgCurrImage
+{
+	height: 100%;
+	width: 100%;
+}
+#divWrapper
+{
+	width: 1200px;
+	height: 675px;
+	margin: auto;
+	background-color: #666;
+}
+.divNavigation
+{
+	width: 200px;
+	height: 100%;
+	/*background-color: yellow;*/
+	position: relative;
+}
+#navTopMenu
+{
+	height: 75px;
+	/*background-color: green;*/
+}
+#divCurrView
+{
+	width: 800px;
+	height: 495px;
+	margin-bottom: 5px;
+
+}
+#divCurrView, #divPrevView
+{
+	float: left;
+}
+#divNextView
+{
+	float: right;
+}
+
+#txtTextArea
+{
+	width: 796px;
+	height: 71px;
+	margin: auto;
+	display: block;
+	resize: none;
+	border: none;
+}
+#divTextArea
+{
+	width: 800px;
+	height: 75px;
+	margin: auto;
+	/*display: block;*/
+}
+#divInfoArea
+{
+	width: 800px;
+	height: 26px;
+	margin: auto;
+	padding-left: 5px;
+	border: 1px solid grey;
+}
+#divControllPanel
+{
+	/*background-color: red;*/
+	width: 800px;
+	height: 70px;
+	position: relative;
+	margin: auto;
+}
+#divPrevArrow
+{
+	background-image: url('leftArrowBlack.png');
+	background-repeat: none;
+	background-size: 50px 100px;
+	left: 0;
+}
+#divPrevArrow:hover
+{
+	background-image: url('leftArrowWhite.png');
+}
+#divNextArrow
+{
+	background-image: url('rightArrowBlack.png');
+	background-repeat: none;
+	background-size: 50px 100px;
+	right: 0;
+}
+#divNextArrow:hover
+{
+	background-image: url('rightArrowWhite.png');
+}
+.divArrow
+{
+	/*background-color: green;*/
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	top: 200px;
+}
+.divThumbNail
+{
+	width: 150px;
+	top:215px;
+	position: absolute;
+	text-align: center;
+}
+#divPrevThumb
+{
+	right: 5px;
+}
+#divNextThumb
+{
+	left: 5px;
+}
+#divDiscard
+{
+	height: 60px;
+	width: 60px;
+	background-image: url('trashButton.png');
+	background-size: 60px 60px;
+	z-index: 10;
+	position: absolute;
+	left: 200px;
+}
+#divDiscard:hover
+{
+	background-image: url('trashButtonOrange.png');
+}
+#divSnap
+{
+	height: 60px;
+	width: 60px;
+	background-image: url('cameraButtonGrey.png');
+	background-size: 60px 60px;
+	z-index: 10;
+	position: absolute;
+	left: 370px;
+	top: 5px;
+}
+#divSnap:hover
+{
+	background-image: url('cameraButtonWhite.png');
+}
+#btnSelect
+{
+	height: 40px;
+	width: 60px;
+}
+.error
+{
+	color: yellow;
+}

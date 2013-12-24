@@ -1,0 +1,13 @@
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\bin\Debug\SharedMembers.dll
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\bin\Debug\SharedMembers.pdb
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.Properties.Resources.resources
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.csproj.GenerateResource.Cache
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.dll
+C:\Users\MIZRAHID\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.pdb
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\bin\Debug\SharedMembers.dll
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\bin\Debug\SharedMembers.pdb
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.csprojResolveAssemblyReference.cache
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.Properties.Resources.resources
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.csproj.GenerateResource.Cache
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.dll
+C:\Users\Evyatarp\Dropbox\FP\ClassLineService\SharedMembers\obj\Debug\SharedMembers.pdb

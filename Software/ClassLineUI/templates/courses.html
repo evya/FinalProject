@@ -1,0 +1,61 @@
+
+<div>
+        <select ng-model="currentCourse"  ng-change="update(currentCourse)" ng-options="course.Name for course in classes.courses" required></select>
+</div>
+
+<label ng-show="classes == undefined">Please open a Class line file to start working</label>
+<br>
+<div id="divWrapper">
+			<article id="artMainDisplay">
+				<div id="divPrevView" class="divNavigation">
+					
+					<div id="divPrevArrow" class="divArrow" ng-click="updatePrev(prevCourse)">
+						
+					</div>
+					<div id="divPrevThumb" class="divThumbNail">
+						<img id="imgPrevThumb" class="imgTumbnail" ng-src="{{prevCourse.Image}}" ng-hide="prevCourse == undefined"></img>
+						<img id="imgPrevThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="prevCourse == undefined"></img>
+						
+					</div>
+				</div>
+
+				<div id="divCurrView">
+		
+
+					<img id="imgCurrImage" ng-src="{{currentCourse.Image}}" ng-hide="currentCourse == undefined"></img>
+					<img id="imgCurrImage" src="images/128x128/noImage.png" ng-show="currentCourse == undefined"></img>
+
+				</div>
+
+				<div id="divNextView" class="divNavigation">
+									
+					<div id="divNextThumb" class="divThumbNail">
+						
+						<img id="imgNextThumb" class="imgTumbnail" ng-src="{{nextCourse.Image}}" ng-hide="nextCourse == undefined"></img>
+						<img id="imgNextThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="nextCourse == undefined"></img>
+					</div>
+					
+					<div id="divNextArrow" class="divArrow" ng-disabled="nextCourse == undefined" ng-click="updateNext(nextCourse)">	
+					</div>
+					
+				</div>
+</article>
+				
+				<div id="divInfoArea">
+					<label>Course Name</label>
+					<input type="text" ng-model="currentCourse.Name">
+					<label>Lecturer</label>
+					<input type="text" ng-model="currentCourse.Lecturer">
+					<label>Course ID</label>
+					<input type="text" ng-model="currentCourse.Id">
+				</div>
+
+				
+				<div id="divControllPanel">
+					<button id="SelectCourseButton" ng-click="selectCourse()" ng-disabled="currentCourse == undefined"><img src="Images/Icons/32x32/notification_done.png"/> Select</button>
+					<button id="btnAddNew" ng-click="addCourse()"><img src="Images/32x32/file_add.png"/> Add Course</button>
+				</div>
+			
+
+</div>
+

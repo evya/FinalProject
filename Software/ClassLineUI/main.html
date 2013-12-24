@@ -1,0 +1,59 @@
+<!doctype html>
+<html ng-app="app" ng-csp>
+  
+  <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Main Window</title>    
+  </head>
+  
+  <body ng-controller="MainController">
+  	
+  	<div id="menu"> 
+  		<!--<button ng-click="prevPage()"><img src="Images/16x16/direction_left.png"/> Previous Page </button>-->		
+		<form name="myForm">
+		<button ng-click="NavCourses()" ng-disabled="Course == null"><img src="Images/16x16/direction_left.png"/> Navigate To {{Course.Name}}</button>
+		<button ng-click="NavLectures()" ng-disabled="Lecture == null"><img src="Images/16x16/direction_left.png"/> Navigate To Lecture #{{Lecture.Number}}</button>
+		<button ng-click="openFile()"><img src="Images/16x16/file_add.png"/> Open </button>	
+		<button ng-click="saveFile()"><img src="Images/16x16/diskette.png"/> Save </button>
+		<input type="checkbox" ng-model="autoSave" ng-disabled="File == null"> Auto Save</input>
+		<img src="Images/Seperator.png"/>
+		<label>Server IP : </label>
+		<input type="text" name="IP" ng-model="IPValue.IP" ng-minlength="7" ng-maxlength="15"  required> 
+		<button ng-click="setIP(IPValue.IP)" ng-disabled="IPValue.IP == undefined || IPValue.IP == ''"><img src="Images/16x16/disc.png"/> Set IP</button>
+        <span class="error" ng-show="myForm.IP.$error.required"> Required</span>
+		<span class="error" ng-show="myForm.IP.$error.minlength"> IP Too short</span>
+        <span class="error" ng-show="myForm.IP.$error.maxlength"> IP Too long</span>
+		
+		</form>
+  	</div>
+		<ng-view></ng-view>
+
+		
+	<div id="footer">
+		<span>Url : {{url}} </span>	  		
+	</div>
+  
+  
+
+	<!--==========================================================================================================================================-->	
+	<!--===================== Scripts & References ==============================================================================================-->
+	
+
+		<script src="scripts/angular.js"></script>
+		
+		<script src="scripts/angular-resource.js"></script>
+		<script src="scripts/ui-bootstrap-0.4.0.min.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/form.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/controllers/courses-controller.js"></script>
+		<script src="scripts/controllers/snapshots-controller.js"></script>
+		<script src="scripts/controllers/lectures-controller.js"></script>
+		<script src="scripts/services/data-service.js"></script>			
+ 
+	<!--==========================================================================================================================================-->	
+	
+	
+  </body>
+</html>

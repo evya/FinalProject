@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"minimum_chrome_version": "23",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"name": "ClassLine App",
+	"description": "Dvir & Evyatar",
+	"version": "1.0",
+	"app": {
+		"launch": {	"local_path": "main.html"},
+		"background": { "scripts": ["Scripts/background.js"]}
+	},
+	
+	"permissions": [
+    {"fileSystem": ["write", "retainEntries"]},
+     {"mediaGalleries": ["read"]},
+     "storage",
+     "syncFileSystem",
+     "notifications",
+     "unlimitedStorage",
+     "contextMenus"],
+	
+	"icons": {
+		"16": "favicon.ico",
+		"128": "icon.png"
+	},
+
+	"commands": {
+			"cmdNew": { "suggested_key": { "default": "Ctrl+N"}, 
+							"description": "Create new window"}
+	}
+}

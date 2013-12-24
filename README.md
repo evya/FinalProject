@@ -1,4 +1,1 @@
-FinalProject
-============
-
-Evyatar and Dvir Final Project
+Please use "Activation instructions.pdf"

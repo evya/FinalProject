@@ -1,0 +1,42 @@
+<div>
+        <select ng-model="currentSnapshot" ng-change="update(currentSnapshot)" ng-options="snapshot.Number for snapshot in snapshots"></select>
+</div>
+<br>
+<div id="divWrapper">
+	
+			<article id="artMainDisplay">
+				
+				<div id="divPrevView" class="divNavigation">	
+					<div id="divPrevArrow" class="divArrow" ng-click="updatePrev(prevSnapshot)">	
+					</div>
+					<div id="divPrevThumb" class="divThumbNail">
+						<img id="imgPrevThumb" class="imgTumbnail" ng-src="{{prevSnapshot.Image}}" ng-hide="prevSnapshot == undefined"></img>
+						<img id="imgPrevThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="prevSnapshot == undefined"></img>
+					</div>
+				</div>
+
+				<div id="divCurrView">
+					<img id="imgCurrImage" ng-src="{{currentSnapshot.Image}}" ng-hide="currentSnapshot == undefined"></img>
+					<img id="imgCurrImage" src="images/128x128/noImage.png" ng-show="currentSnapshot == undefined"></img>
+				</div>
+
+				<div id="divNextView" class="divNavigation">			
+					<div id="divNextThumb" class="divThumbNail">
+						<img id="imgNextThumb" class="imgTumbnail" ng-src="{{nextSnapshot.Image}}" ng-hide="nextSnapshot == undefined"></img>
+						<img id="imgNextThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="nextSnapshot == undefined"></img>
+					</div>
+					<div id="divNextArrow" class="divArrow" ng-click="updateNext(nextSnapshot)">	
+					</div>
+				</div>
+</article>
+				<div id="divTextArea">
+					<textarea id="txtTextArea" ng-model="currentSnapshot.comments" placeholder="{{currentSnapshot.comments}}" wrap="hard"></textarea>
+				</div>
+				
+				<div id="divControllPanel">
+					<button id="btnDiscard" ng-click="removeSnapshot()"><img src="Images/Icons/32x32/file_delete.png"/> Discard</button>
+					<button id="btnSnap" ng-click="capture()"><img src="Images/Icons/32x32/camera.png"/> Snap</button>
+				</div>
+			
+
+</div>

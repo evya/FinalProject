@@ -1,0 +1,12 @@
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\DeploymentDashboardServiceHost.exe.config
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\DeploymentDashboardServiceHost.exe
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\DeploymentDashboardServiceHost.pdb
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\DeploymentDashboardService.dll
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\EntityFramework.dll
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\EntityFramework.SqlServer.dll
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\DeploymentDashboardService.pdb
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\EntityFramework.xml
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\bin\Debug\EntityFramework.SqlServer.xml
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\obj\x86\Debug\DeploymentDashboardServiceHost.exe
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\obj\x86\Debug\DeploymentDashboardServiceHost.pdb
+C:\QC\Views\Apollo\Sources\Utilities\Deployment Dashboard Service\Deployment Dashboard ServiceHost\obj\x86\Debug\DeploymentDashboardServiceHost.csprojResolveAssemblyReference.cache

@@ -1,0 +1,52 @@
+<div>
+        <select ng-model="currentLecture" ng-change="update(currentLecture)" ng-options="lecture.Number for lecture in lectures"></select>
+</div>
+<br>
+<div id="divWrapper">
+
+			<article id="artMainDisplay">
+				<div id="divPrevView" class="divNavigation">
+					
+					<div id="divPrevArrow" class="divArrow" ng-click="updatePrev(prevLecture)">
+						
+					</div>
+					<div id="divPrevThumb" class="divThumbNail">
+						<img id="imgPrevThumb" class="imgTumbnail" ng-src="{{prevLecture.Image}}" ng-hide="prevLecture == undefined"></img>
+						<img id="imgPrevThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="prevLecture == undefined"></img>
+						
+					</div>
+				</div>
+
+				<div id="divCurrView">
+		
+
+					<img id="imgCurrImage" ng-src="{{currentLecture.Image}}" ng-hide="currentLecture == undefined"></img>
+					<img id="imgCurrImage" src="images/128x128/noImage.png" ng-show="currentLecture == undefined"></img>
+
+				</div>
+
+				<div id="divNextView" class="divNavigation">
+									
+					<div id="divNextThumb" class="divThumbNail">
+						
+						<img id="imgNextThumb" class="imgTumbnail" ng-src="{{nextLecture.Image}}" ng-hide="nextLecture == undefined"></img>
+						<img id="imgNextThumb" class="imgTumbnail" src="images/128x128/noImage.png" ng-show="nextLecture == undefined"></img>
+					</div>
+					
+					<div id="divNextArrow" class="divArrow" ng-click="updateNext(nextLecture)">	
+					</div>
+					
+				</div>
+
+			</article>
+				<div id="divInfoArea">
+					<label>Lecture Number</label>
+					<input type="text" ng-model="currentLecture.Number">
+					<label>Date</label>
+					<input type="text" ng-model="currentLecture.Date">
+				</div>
+				<div id="divControllPanel">
+					<button id="btnDiscard" ng-click="selectLecture()" ng-disabled="currentLecture == undefined"><img src="Images/Icons/32x32/notification_done.png"/> Select</button>
+					
+				</div>
+</div>
